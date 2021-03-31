@@ -2,8 +2,8 @@ import processing.core.PApplet;
 
 public class Processing_4Balls extends PApplet {
 
-    public static final int WIDTH = 640;
-    public static final int HEIGHT = 480;
+    public static final int WIDTH = 700;
+    public static final int HEIGHT = 600;
     int first = 0;
     int second = 0;
     int third = 0;
@@ -34,19 +34,19 @@ public class Processing_4Balls extends PApplet {
     }
 
     private void drawFirstCircle() {
-        ellipse(first,96,10,10);
+        ellipse(first,(1*HEIGHT)/5,10,10);
         first++;
     }
     private void drawSecondCircle() {
-        ellipse(second,192,10,10);
+        ellipse(second,(2*HEIGHT)/5,10,10);
         second+=2;
     }
     private void drawThirdCircle() {
-        ellipse(third,288,10,10);
+        ellipse(third,(3*HEIGHT)/5,10,10);
         third+=3;
     }
     private void drawForthCircle() {
-        ellipse(forth,384,10,10);
+        ellipse(forth,(4*HEIGHT)/5,10,10);
         forth+=4;
     }
 
